@@ -2,32 +2,105 @@ body {
     background-color: #000;
     font-family: 'Roboto Slab', serif;
     color: #fff;
+    height: 100%;
+    margin: 0;
 }
 
 #main {
     display: flex;
     flex-direction: column;
-    row-gap: 5vw;
-    width: 80%;
+    row-gap: 2vw;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 5vw auto;
-    height: 100%;
+    margin: auto;
     padding: 0;
     border: 0;
+    overflow: hidden;
+    font-size: 1vw;
 }
 
 #logo-header {
     width: 20vw;
+    margin: 2vw auto;
 }
 
+/* HOME - login */
+
 .login-component, .login-component h2 {
-    width: 60%;
+    width: 60vw;
     height: auto;
     background-color: transparent;
-    border: 5px solid #43C2AC;
+    border: 2px solid #43C2AC;
     border-radius: 20px;
-    padding: 2vw;
+    padding: 2vw 1vw;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-login {
+    width: 50%;
+    background-color: #43C2AC;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 1vw;
+    transition: 0.2s;
+}
+.input-login:hover, .input-login:focus {
+    background-color: #3F9B8C;
+}
+
+.input-label,
+.input-label a {
+    width: 54%;
+    display: block;
+    padding: 1vw;
+    margin: 0;
+}
+
+#button-login {
+    width: 10%;
+    transition: 0.2s;
+}
+#button-login:hover {
+    transform: scale(0.9); 
+}
+
+.new-acc, 
+.new-acc a {
+    color: #43C2AC;
+    transition: 0.2s;
+    padding: 1vw;
+}
+.new-acc:hover {
+    transform: scale(0.9); 
+}
+
+/* media queries */
+
+@media (max-height: 700px) {
+    .login-component {
+        width: 35vw;
+        padding: 0;
+    }
+}
+
+@media (max-height: 655px){
+    #logo-header {
+        width: 40vw;
+        margin: 3vw auto;
+    }
+    #main {
+        font-size: 2vw;
+    }
+    .login-component {
+        width: 60vw;
+        margin: 2vw auto;
+    }
 }

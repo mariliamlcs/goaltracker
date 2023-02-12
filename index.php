@@ -18,7 +18,17 @@
         <img src="media/logo.png" id="logo-header"/>
         <div class=login-component>
             <h1><center>login</center></h1>
+            <br/>
+            <input class="input-login"></input>
+            <p class="input-label">username</p>
+            <br/>
+            <input class="input-login"></input>
+            <p class="input-label">password</p> 
+               
+            <img src="media/enter_icon.png" id="button-login"/>
+            <br/>
 
+            <p class="new-acc">create a profile</p> 
         </div>
     </div>
 </body>

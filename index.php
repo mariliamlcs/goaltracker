@@ -17,19 +17,29 @@
     <div id="main">
         <img src="media/logo.png" id="logo-header"/>
         <div class=login-component>
+
+        <form action="login.php" method="post" autocomplete="off">
+        <?php if (isset($_GET['error'])) { ?>
+
+        <p class="error"><?php echo $_GET['error']; ?></p>
+
+        <?php } ?>
+
             <h1><center>login</center></h1>
             <br/>
-            <input class="input-login"></input>
+            <input type ="text" name="username" class="input-login"></input>
             <p class="input-label">username</p>
             <br/>
-            <input class="input-login"></input>
+            <input type="password" name="password" class="input-login"></input>
             <p class="input-label">password</p> 
                
-            <img src="media/enter_icon.png" id="button-login"/>
-            <br/>
+            <button type="submit"><img src="media/enter_icon.png" id="button-login"/></button>
 
             <p class="new-acc">create a profile</p> 
+
+        </form>
+
         </div>
-    </div>
+    </div> <!-- /main -->
 </body>
 </html>

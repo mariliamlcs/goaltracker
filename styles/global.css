@@ -27,3 +27,21 @@ body {
     width: 20%;
     margin: 2vw auto;
 }
+
+/* media queries */
+
+@media screen and (min-height: 660px) {
+    #main {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (min-height: 0px) and (max-height: 655px){
+    #logo-header {
+        width: 50%;
+        margin: 3vw auto;
+    }
+    #main {
+        font-size: 2vw;
+    }
+}

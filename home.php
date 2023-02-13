@@ -25,7 +25,7 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
     <div id="main">
         <img src="media/logo.png" id="logo-header"/>
-        <h2>Dashboard</h2>
+        <div class= "title"><h2>Dashboard</h2></div>
 		<p>Welcome back, <?=$_SESSION['name']?>!</p>
     </div> <!-- /main -->
 </body>

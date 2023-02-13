@@ -18,15 +18,15 @@
         <img src="media/logo.png" id="logo-header"/>
         <div class=login-component>
 
-        <form action="login.php" method="post" autocomplete="off">
+        <form action="authenticate.php" method="post" autocomplete="off">
         
 
             <h1><center>login</center></h1>
             <br/>
-            <input type ="text" name="username" id="username" class="input-login" autocomplete="off"></input>
+            <input type="text" name="username" id="username" class="input-login" autocomplete="off" required></input>
             <p class="input-label">username</p>
             <br/>
-            <input type="password" name="password" id="password" class="input-login" autocomplete="off"></input>
+            <input type="password" name="password" id="password" class="input-login" autocomplete="off" required></input>
             <p class="input-label">password</p> 
                
             <input type="submit" value="ok" autocomplete="off"></input>

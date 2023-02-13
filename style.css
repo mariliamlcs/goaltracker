@@ -75,23 +75,31 @@ button {
     margin: 0;
 }
 
-#button-login {
-    width: 20%;
+form input[type="submit"] {
+    padding: 1vw;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #43C2AC;
+    border: 1px solid #43C2AC;
+    border-radius: 20px;
     transition: 0.2s;
-    margin-top: 1vw;
 }
-#button-login:hover {
+form input[type="submit"]:hover {
     transform: scale(0.9); 
 }
 
-.new-acc, 
-.new-acc a {
+p.new-acc, 
+p.new-acc a {
     color: #43C2AC;
     transition: 0.2s;
     padding: 1vw;
+    text-align: center;
 }
-.new-acc:hover {
+p.new-acc:hover {
     transform: scale(0.9); 
+    text-align: center;
 }
 
 /* media queries */

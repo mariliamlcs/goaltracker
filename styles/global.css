@@ -22,3 +22,8 @@ body {
     overflow: hidden;
     font-size: 1vw;
 }
+
+#logo-header {
+    width: 20%;
+    margin: 2vw auto;
+}
